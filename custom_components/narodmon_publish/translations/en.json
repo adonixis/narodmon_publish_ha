@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Narodmon Publish",
-        "description": "Publish Home Assistant sensor readings to [Narodmon](https://narodmon.ru).",
+        "description": "Publish Home Assistant sensor readings to Narodmon ({url}).",
         "data": {
           "device_mac": "Device MAC address",
           "device_name": "Device name (optional)",

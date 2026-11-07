@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Narodmon Publish",
-        "description": "Публикация показаний сенсоров Home Assistant в [Народный мониторинг](https://narodmon.ru).",
+        "description": "Публикация показаний сенсоров Home Assistant в «Народный мониторинг» ({url}).",
         "data": {
           "device_mac": "MAC-адрес устройства",
           "device_name": "Имя устройства (необязательно)",
