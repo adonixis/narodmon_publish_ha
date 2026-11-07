@@ -130,6 +130,7 @@ class NarodmonConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             step_id="user",
             data_schema=_options_schema(user_input),
             errors=errors,
+            description_placeholders={"url": "https://narodmon.ru"},
         )
 
     async def async_step_reconfigure(

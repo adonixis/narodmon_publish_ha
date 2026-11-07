@@ -9,4 +9,4 @@ homeassistant:
 logger:
   default: info
   logs:
-    custom_components.publish_narodmon: debug
+    custom_components.narodmon_publish: debug

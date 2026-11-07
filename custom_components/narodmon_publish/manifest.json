@@ -1,0 +1,12 @@
+{
+  "domain": "narodmon_publish",
+  "name": "Narodmon Publish",
+  "categories": ["weather_alerts", "sensors"],
+  "codeowners": ["@adonixis"],
+  "config_flow": true,
+  "documentation": "https://github.com/adonixis/narodmon_publish_ha",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/adonixis/narodmon_publish_ha/issues",
+  "loggers": ["custom_components.narodmon_publish"],
+  "version": "1.0.0"
+}

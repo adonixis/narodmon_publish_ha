@@ -1,10 +1,10 @@
 {
-  "title": "Publish Narodmon",
+  "title": "Narodmon Publish",
   "config": {
     "step": {
       "user": {
-        "title": "Publish Narodmon",
-        "description": "Публикация показаний сенсоров Home Assistant в [Народный мониторинг](https://narodmon.ru).",
+        "title": "Narodmon Publish",
+        "description": "Публикация показаний сенсоров Home Assistant в «Народный мониторинг» ({url}).",
         "data": {
           "device_mac": "MAC-адрес устройства",
           "device_name": "Имя устройства (необязательно)",
@@ -23,7 +23,7 @@
         }
       },
       "reconfigure": {
-        "title": "Перенастройка Publish Narodmon",
+        "title": "Перенастройка Narodmon Publish",
         "description": "Изменение сенсоров и интервалов отправки для этого устройства.",
         "data": {
           "device_mac": "MAC-адрес устройства",

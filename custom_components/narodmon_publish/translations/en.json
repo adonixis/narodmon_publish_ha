@@ -1,10 +1,10 @@
 {
-  "title": "Publish Narodmon",
+  "title": "Narodmon Publish",
   "config": {
     "step": {
       "user": {
-        "title": "Publish Narodmon",
-        "description": "Publish Home Assistant sensor readings to [Narodmon](https://narodmon.ru).",
+        "title": "Narodmon Publish",
+        "description": "Publish Home Assistant sensor readings to Narodmon ({url}).",
         "data": {
           "device_mac": "Device MAC address",
           "device_name": "Device name (optional)",
@@ -23,7 +23,7 @@
         }
       },
       "reconfigure": {
-        "title": "Reconfigure Publish Narodmon",
+        "title": "Reconfigure Narodmon Publish",
         "description": "Update sensors and send intervals for this Narodmon device.",
         "data": {
           "device_mac": "Device MAC address",
