@@ -4,7 +4,7 @@ from logging import Logger, getLogger
 
 LOGGER: Logger = getLogger(__package__)
 
-DOMAIN = "publish_narodmon"
+DOMAIN = "narodmon_publish"
 
 CONF_DEVICE_MAC = "device_mac"
 CONF_DEVICE_NAME = "device_name"

@@ -1,4 +1,4 @@
-# Publish Narodmon for Home Assistant
+# Narodmon Publish for Home Assistant
 
 Custom integration that publishes Home Assistant sensor readings to [Народный мониторинг](https://narodmon.ru) using the Narodmon PRO TCP protocol (port 8283).
 
@@ -16,17 +16,17 @@ Custom integration that publishes Home Assistant sensor readings to [Народ�
 ### HACS
 
 1. Add this repository as a [custom repository](https://hacs.xyz/docs/faq/custom_repositories/) in HACS (category: Integration).
-2. Install **Publish Narodmon**.
+2. Install **Narodmon Publish**.
 3. Restart Home Assistant.
 
 ### Manual
 
-Copy the `custom_components/publish_narodmon` folder into your Home Assistant `custom_components` directory and restart.
+Copy the `custom_components/narodmon_publish` folder into your Home Assistant `custom_components` directory and restart.
 
 ## Configuration
 
 1. Go to **Settings → Devices & services → Add integration**.
-2. Search for **Publish Narodmon**.
+2. Search for **Narodmon Publish**.
 3. Enter your device **MAC address** (as registered on narodmon.ru).
 4. Optionally set a **device name** and **coordinates entity** (e.g. `zone.home` or a `person` entity).
 5. Select **sensors** to publish.

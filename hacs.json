@@ -1,5 +1,5 @@
 {
-    "name": "Publish Narodmon",
+    "name": "Narodmon Publish",
     "content_in_root": false,
     "homeassistant": "2024.1.0",
     "hacs": "2.0.5"
