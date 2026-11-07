@@ -1,4 +1,4 @@
-"""Shared helpers for the Publish Narodmon integration."""
+"""Shared helpers for the Narodmon Publish integration."""
 
 from __future__ import annotations
 
