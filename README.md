@@ -1,42 +1,44 @@
-# Narodmon Publish for Home Assistant
+# Narodmon Publish для Home Assistant
 
-Custom integration that publishes Home Assistant sensor readings to [Народный мониторинг](https://narodmon.ru) using the Narodmon PRO TCP protocol (port 8283).
+**Русский** | [English](README.en.md)
 
-## Features
+Кастомная интеграция, которая отправляет показания сенсоров Home Assistant на [Народный мониторинг](https://narodmon.ru) по протоколу Narodmon PRO (TCP-порт 8283).
 
-- Config flow UI — no YAML configuration required
-- Select multiple `sensor` entities to publish
-- Optional device name and coordinates entity (latitude/longitude attributes)
-- Sends when values change (configurable interval, default 6 min)
-- Force send if no changes for a long time (default 20 min)
-- Reconfigure existing entries from the integration page
+## Возможности
 
-## Installation
+- Настройка через UI (config flow) — YAML не нужен
+- Выбор нескольких сущностей `sensor` для отправки
+- Необязательные имя устройства и сущность с координатами (атрибуты latitude/longitude)
+- Отправка при изменении значений (интервал настраивается, по умолчанию 6 мин)
+- Принудительная отправка, если изменений нет долгое время (по умолчанию 20 мин)
+- Перенастройка существующих записей со страницы интеграции
+
+## Установка
 
 ### HACS
 
-1. Add this repository as a [custom repository](https://hacs.xyz/docs/faq/custom_repositories/) in HACS (category: Integration).
-2. Install **Narodmon Publish**.
-3. Restart Home Assistant.
+1. Добавь этот репозиторий как [пользовательский репозиторий](https://hacs.xyz/docs/faq/custom_repositories/) в HACS (категория: Integration).
+2. Установи **Narodmon Publish**.
+3. Перезапусти Home Assistant.
 
-### Manual
+### Вручную
 
-Copy the `custom_components/narodmon_publish` folder into your Home Assistant `custom_components` directory and restart.
+Скопируй папку `custom_components/narodmon_publish` в директорию `custom_components` своего Home Assistant и перезапусти его.
 
-## Configuration
+## Настройка
 
-1. Go to **Settings → Devices & services → Add integration**.
-2. Search for **Narodmon Publish**.
-3. Enter your device **MAC address** (as registered on narodmon.ru).
-4. Optionally set a **device name** and **coordinates entity** (e.g. `zone.home` or a `person` entity).
-5. Select **sensors** to publish.
-6. Adjust send intervals if needed.
+1. Перейди в **Настройки → Устройства и службы → Добавить интеграцию**.
+2. Найди **Narodmon Publish**.
+3. Укажи **MAC-адрес** устройства (тот, что зарегистрирован на narodmon.ru).
+4. При необходимости задай **имя устройства** и **сущность с координатами** (например, `zone.home` или сущность `person`).
+5. Выбери **сенсоры** для отправки.
+6. При необходимости измени интервалы отправки.
 
-To change sensors or intervals later, open the integration entry and choose **Reconfigure**.
+Чтобы позже поменять сенсоры или интервалы, открой запись интеграции и выбери **Перенастроить**.
 
-## Protocol
+## Протокол
 
-Data is sent to `narodmon.ru:8283` in the Narodmon PRO format:
+Данные отправляются на `narodmon.ru:8283` в формате Narodmon PRO:
 
 ```
 #MAC#Name
@@ -46,14 +48,14 @@ Data is sent to `narodmon.ru:8283` in the Narodmon PRO format:
 ##
 ```
 
-Sensor `device_class` values are mapped automatically (`temperature` → `TEMP`, `humidity` → `RH`, etc.). Duplicate types are numbered (`TEMP1`, `TEMP2`, …).
+Значения `device_class` сенсоров сопоставляются автоматически (`temperature` → `TEMP`, `humidity` → `RH` и т.д.). Одинаковые типы нумеруются (`TEMP1`, `TEMP2`, …).
 
-## Development
+## Разработка
 
 ```bash
 scripts/develop
 ```
 
-## License
+## Лицензия
 
-See [LICENSE](LICENSE).
+См. [LICENSE](LICENSE).
