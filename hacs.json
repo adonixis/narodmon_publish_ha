@@ -1,6 +1,7 @@
 {
     "name": "Narodmon Publish",
     "content_in_root": false,
+    "country": "RU",
     "homeassistant": "2024.1.0",
     "hacs": "2.0.5",
     "country": ["RU"]
