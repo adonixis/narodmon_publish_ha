@@ -1,8 +1,8 @@
 {
   "domain": "narodmon_publish",
   "name": "Narodmon Publish",
-  "codeowners": ["@adonixis"],
   "categories": ["weather_alerts", "sensors"],
+  "codeowners": ["@adonixis"],
   "config_flow": true,
   "documentation": "https://github.com/adonixis/narodmon_publish_ha",
   "iot_class": "cloud_push",
